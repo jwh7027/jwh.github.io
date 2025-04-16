@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Shop</title>
+    <link
+      rel="shortucut icon"
+      type="image/x-icon"
+      href="https://yt3.googleusercontent.com/A_FS30pNKvIuf79LJSRUzPRaDGOsKUmWw9lWYBSY6v2RyalL2hSjtgv4IV2R39CEOreM8A2Vcw=s900-c-k-c0x00ffffff-no-rj"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <style>
+      span {
+        color: crimson;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #login-title {
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      input[type='submit'] {
+        background-color: blue;
+        color: white;
+      }
+      div span {
+        color: aqua;
+      }
+      div form span {
+        color: red;
+      }
+      div > span {
+        /*직계자손만 적용*/
+        color: blue;
+      }
+      /*+는 다음 형제만 ~는 모든형제*/
+      input[type='email'] + span {
+        color: chartreuse;
+      }
+      /*id 클래스 태그 순으로 우선순위 css적용*/
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span id="login-title">로그인 하기</span>
+      <form action="">
+        <span>이메일</span>
+        <input type="email" placeholder="이메일을 입력해주세요" />
+        <span>비밀번호</span>
+        <input type="password" placeholder="비밀번호" />
+        <input type="submit" value="제출하기" />
+        <span>이것은 테스트 span 입니다</span>
+      </form>
+    </div>
+  </body>
+</html>

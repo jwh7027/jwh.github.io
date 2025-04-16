@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--태그 문서 html all tag mdn 검색-->
+<!-- html 구조조-->
+<html>
+  <head>
+    <title>My Shop</title>
+    <link
+      rel="shortucut icon"
+      type="image/x-icon"
+      href="https://yt3.googleusercontent.com/A_FS30pNKvIuf79LJSRUzPRaDGOsKUmWw9lWYBSY6v2RyalL2hSjtgv4IV2R39CEOreM8A2Vcw=s900-c-k-c0x00ffffff-no-rj"
+    />
+    <!-- 익스터널 css적용 1번째 방법-->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- 인터널 css적용 2번째 방법-->
+    <style>
+      html {
+        background-color: brown;
+      }
+      body {
+        margin: 0;
+        background-color: black;
+        margin: 20px 30px; /* 앞에는 위아래 뒤에는 좌우 */
+        margin: 20px 30px 40px 50px; /* 위 오른쪽 아래 왼쪽 */
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+        border-bottom: 3px solid red;
+        /* border-width: 3px;
+        border-style: solid;
+        border-color: red; */
+      }
+
+      span {
+        border: 1px solid orange;
+        margin-left: 30px;
+        margin-top: 30px;
+        display: block;
+      }
+      /*
+      선택자 {
+      속성명 : 속성값;}
+      */
+    </style>
+  </head>
+  <body>
+    <!-- 인라인 css적용 3번째 방법-->
+    <!-- <header style="color: orange">이건 웹사이트의 제목입니다.</header> -->
+    <div>div 안에있는 텍스트입니다</div>
+
+    <!-- <main>
+    </main> -->
+    <!-- <a href="#">네이버</a>
+    <a href="#">쿠팡</a> -->
+    <!-- 블락은 옆에 아무도 못오고 인라인은 옆에 컨텐츠가 올 수 있음 -->
+    <span>테스트 글자입니다.</span>
+    <!-- <footer></footer> -->
+  </body>
+</html>
